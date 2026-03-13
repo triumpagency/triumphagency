@@ -37,7 +37,7 @@ const Navbar = () => {
       
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#home" className="font-display text-xl font-bold tracking-tight text-foreground">
-          Triumph   Agency                                <span className="text-accent">Triumph</span>
+               Triumph                                 <span className="text-accent">Triumph</span>
         </a>
 
         {/* Desktop links */}

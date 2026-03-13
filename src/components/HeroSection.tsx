@@ -31,8 +31,8 @@ const HeroSection = () =>
       className="font-display text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6"
       style={{ color: "hsl(210, 40%, 98%)" }}>
       
-        Hi, I'm{" "}
-        <span className="text-gradient">Triumph Agency </span>
+        Welcome to{" "}
+        <span className="text-gradient">Triumph Agency</span>
       </motion.h1>
 
       <motion.p

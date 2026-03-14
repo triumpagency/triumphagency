@@ -75,10 +75,12 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group glass rounded-xl overflow-hidden hover:border-accent/30 transition-all"
             >
-              <div className={`h-48 bg-gradient-to-br ${p.color} flex items-center justify-center`}>
-                <span className="font-display text-foreground/40 text-6xl font-bold">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <span className="text-xs font-medium text-accent uppercase tracking-wider">

@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Sarah K.",
     role: "CEO, TechNova",
-    text: "Bola Triumph delivered an outstanding website that exceeded our expectations. The attention to detail and modern design truly set our brand apart.",
+    text: "Triumph Agency delivered an outstanding website that exceeded our expectations. The attention to detail and modern design truly set our brand apart.",
   },
   {
     name: "James O.",

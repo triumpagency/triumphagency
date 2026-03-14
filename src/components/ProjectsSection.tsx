@@ -1,43 +1,49 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectBranding from "@/assets/project-branding.jpg";
+import projectDashboard from "@/assets/project-dashboard.jpg";
+import projectMobile from "@/assets/project-mobile.jpg";
+import projectPortfolio from "@/assets/project-portfolio.jpg";
+import projectMarketing from "@/assets/project-marketing.jpg";
 
 const projects = [
   {
     title: "E-Commerce Platform",
     category: "Web Development",
     desc: "A full-featured online store with modern UI, payment integration, and analytics dashboard.",
-    color: "from-accent/20 to-primary/20",
+    image: projectEcommerce,
   },
   {
     title: "Brand Identity System",
     category: "Design & Branding",
     desc: "Complete visual identity including logo, typography, and guidelines for a tech startup.",
-    color: "from-primary/20 to-accent/20",
+    image: projectBranding,
   },
   {
     title: "SaaS Dashboard",
     category: "Web Application",
     desc: "Real-time analytics dashboard with interactive charts and user management features.",
-    color: "from-accent/20 to-cyan-muted/20",
+    image: projectDashboard,
   },
   {
     title: "Mobile App Landing",
     category: "Landing Page",
     desc: "High-converting landing page with animations, testimonials, and download CTAs.",
-    color: "from-cyan-muted/20 to-primary/20",
+    image: projectMobile,
   },
   {
     title: "Portfolio Website",
     category: "Web Design",
     desc: "Elegant portfolio showcasing creative work with smooth transitions and dark mode.",
-    color: "from-primary/20 to-accent/20",
+    image: projectPortfolio,
   },
   {
     title: "Marketing Automation",
     category: "Web Application",
     desc: "Email marketing platform with drag-and-drop builder and campaign analytics.",
-    color: "from-accent/20 to-primary/20",
+    image: projectMarketing,
   },
 ];
 

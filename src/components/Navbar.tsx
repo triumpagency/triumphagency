@@ -3,14 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun, Menu, X } from "lucide-react";
 
 const navLinks = [
-{ label: "Home", href: "#home" },
-{ label: "Why Us", href: "#why-us" },
-{ label: "Work", href: "#projects" },
-{ label: "Results", href: "#results" },
-{ label: "Process", href: "#process" },
-{ label: "Blog", href: "#blog" },
-{ label: "FAQ", href: "#faq" },
-{ label: "Contact", href: "#contact" }];
+  { label: "Home", href: "#home" },
+  { label: "Why Us", href: "#why-us" },
+  { label: "Platforms", href: "#platforms" },
+  { label: "Work", href: "#projects" },
+  { label: "Results", href: "#results" },
+  { label: "Process", href: "#process" },
+  { label: "Blog", href: "#blog" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" }];
 
 
 

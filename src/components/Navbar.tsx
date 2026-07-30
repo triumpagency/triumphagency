@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Why Us", href: "#why-us" },
   { label: "Platforms", href: "#platforms" },
   { label: "Work", href: "#projects" },
+  { label: "Top Projects", href: "#top-projects" },
   { label: "Results", href: "#results" },
   { label: "Process", href: "#process" },
   { label: "Blog", href: "#blog" },

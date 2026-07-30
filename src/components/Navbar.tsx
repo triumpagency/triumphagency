@@ -4,11 +4,14 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 
 const navLinks = [
 { label: "Home", href: "#home" },
-{ label: "About", href: "#about" },
-{ label: "Projects", href: "#projects" },
-{ label: "Skills", href: "#skills" },
-{ label: "Testimonials", href: "#testimonials" },
+{ label: "Why Us", href: "#why-us" },
+{ label: "Work", href: "#projects" },
+{ label: "Results", href: "#results" },
+{ label: "Process", href: "#process" },
+{ label: "Blog", href: "#blog" },
+{ label: "FAQ", href: "#faq" },
 { label: "Contact", href: "#contact" }];
+
 
 
 const Navbar = () => {

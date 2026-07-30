@@ -4,21 +4,22 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah K.",
-    role: "CEO, TechNova",
-    text: "Triumph Agency delivered an outstanding website that exceeded our expectations. The attention to detail and modern design truly set our brand apart.",
+    name: "Sample Testimonial",
+    role: "Skincare Brand Owner",
+    text: "The process was organised from the first call. Designs came back on schedule, feedback was handled quickly, and the finished store finally looks like the brand we set out to build.",
   },
   {
-    name: "James O.",
-    role: "Founder, GreenLeaf",
-    text: "Professional, responsive, and incredibly talented. The e-commerce platform Bola built for us increased our online sales by 200%.",
+    name: "Sample Testimonial",
+    role: "Apparel Store Founder",
+    text: "Communication was the standout. We always knew what was happening and when, and the new store is far easier for customers to navigate on mobile.",
   },
   {
-    name: "Amara L.",
-    role: "Marketing Director",
-    text: "Working with Bola was a game-changer. Our new website loads fast, looks stunning, and converts visitors like never before.",
+    name: "Sample Testimonial",
+    role: "Home Goods Retailer",
+    text: "Clean design, fast pages, and a team that actually explained the reasoning behind each decision. Post-launch support has been just as responsive.",
   },
 ];
+
 
 const TestimonialsSection = () => {
   const ref = useRef(null);
@@ -31,13 +32,18 @@ const TestimonialsSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
           <p className="text-accent font-display text-sm tracking-[0.2em] uppercase mb-3">Testimonials</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
             What Clients Say
           </h2>
         </motion.div>
+
+        <p className="text-center text-xs text-muted-foreground mb-14 max-w-2xl mx-auto">
+          Sample testimonials shown for illustration. We will replace these with verified client reviews as projects complete.
+        </p>
+
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (

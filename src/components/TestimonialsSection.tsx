@@ -32,13 +32,18 @@ const TestimonialsSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
           <p className="text-accent font-display text-sm tracking-[0.2em] uppercase mb-3">Testimonials</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
             What Clients Say
           </h2>
         </motion.div>
+
+        <p className="text-center text-xs text-muted-foreground mb-14 max-w-2xl mx-auto">
+          Sample testimonials shown for illustration. We will replace these with verified client reviews as projects complete.
+        </p>
+
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (

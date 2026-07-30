@@ -40,7 +40,7 @@ const platforms = [
   },
   {
     name: "GoDaddy",
-    logo: "https://cdn.worldvectorlogo.com/logos/godaddy.svg",
+    logo: "https://cdn.worldvectorlogo.com/logos/godaddy-1.svg",
     description:
       "Reliable GoDaddy website solutions for small businesses and entrepreneurs. We set up, design, and optimize sites that launch quickly and grow with you.",
     benefits: ["Website + Business setup", "Domain & hosting guidance", "Local business optimization"],

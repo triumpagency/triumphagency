@@ -4,21 +4,22 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah K.",
-    role: "CEO, TechNova",
-    text: "Triumph Agency delivered an outstanding website that exceeded our expectations. The attention to detail and modern design truly set our brand apart.",
+    name: "Sample Testimonial",
+    role: "Skincare Brand Owner",
+    text: "The process was organised from the first call. Designs came back on schedule, feedback was handled quickly, and the finished store finally looks like the brand we set out to build.",
   },
   {
-    name: "James O.",
-    role: "Founder, GreenLeaf",
-    text: "Professional, responsive, and incredibly talented. The e-commerce platform Bola built for us increased our online sales by 200%.",
+    name: "Sample Testimonial",
+    role: "Apparel Store Founder",
+    text: "Communication was the standout. We always knew what was happening and when, and the new store is far easier for customers to navigate on mobile.",
   },
   {
-    name: "Amara L.",
-    role: "Marketing Director",
-    text: "Working with Bola was a game-changer. Our new website loads fast, looks stunning, and converts visitors like never before.",
+    name: "Sample Testimonial",
+    role: "Home Goods Retailer",
+    text: "Clean design, fast pages, and a team that actually explained the reasoning behind each decision. Post-launch support has been just as responsive.",
   },
 ];
+
 
 const TestimonialsSection = () => {
   const ref = useRef(null);

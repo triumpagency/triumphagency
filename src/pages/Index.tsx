@@ -5,6 +5,7 @@ import PlatformsSection from "@/components/PlatformsSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import TopProjectsSection from "@/components/TopProjectsSection";
+import HighlyConvertingWebsitesSection from "@/components/HighlyConvertingWebsitesSection";
 import PreviousProjectsSection from "@/components/PreviousProjectsSection";
 import CaseStudySection from "@/components/CaseStudySection";
 import ResultsSection from "@/components/ResultsSection";
@@ -27,8 +28,9 @@ const Index = () => (
     <PlatformsSection />
     <WhyChooseSection />
     <ProjectsSection />
-    <TopProjectsSection />
-    <PreviousProjectsSection />
+      <TopProjectsSection />
+      <HighlyConvertingWebsitesSection />
+      <PreviousProjectsSection />
     <CaseStudySection />
     <ResultsSection />
     <BeforeAfterSection />

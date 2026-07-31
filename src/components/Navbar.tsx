@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Platforms", href: "#platforms" },
   { label: "Work", href: "#projects" },
   { label: "Top Projects", href: "#top-projects" },
+  { label: "Conversions", href: "#highly-converting" },
   { label: "Results", href: "#results" },
   { label: "Process", href: "#process" },
   { label: "Blog", href: "#blog" },

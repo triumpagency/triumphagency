@@ -78,9 +78,12 @@ const ProjectsSection = () => {
               <div className="h-48 overflow-hidden">
                 <img
                   src={p.image}
-                  alt={p.title}
+                  alt={`${p.title} project screenshot`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+
               </div>
               <div className="p-6">
                 <span className="text-xs font-medium text-accent uppercase tracking-wider">

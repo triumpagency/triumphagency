@@ -1,4 +1,4 @@
-import { lazy, type LazyExoticComponent } from "react";
+import { lazy, type ComponentType, type LazyExoticComponent } from "react";
 
 export type SectionDef = {
   slug: string;
@@ -7,7 +7,7 @@ export type SectionDef = {
   description: string;
   blurb: string;
   group: "Agency" | "Work" | "Proof" | "Resources" | "Start";
-  Component: LazyExoticComponent<() => JSX.Element>;
+  Component: LazyExoticComponent<ComponentType>;
 };
 
 /**

@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.25.0";
+import { auth, defineMcp } from "npm:@lovable.dev/mcp-js@0.25.0";
 
 // src/lib/mcp/tools/list-services.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.25.0";
@@ -185,11 +185,16 @@ var get_contact_info_default = defineTool6({
 });
 
 // src/lib/mcp/index.ts
+var projectRef = "otkdjygelsqlkecxnvds";
 var mcp_default = defineMcp({
   name: "bola-triumph-portfolio",
   title: "Bola Triumph Portfolio",
   version: "0.1.0",
-  instructions: "Public information tools for Triumph Agency, a premium Shopify design and development agency. Use `list_services` for what the agency offers, `get_process` for the six-step project process, `search_faq` for pricing, timelines, migrations, support and other client questions, `list_blog_topics` for published Shopify insights, `get_case_study` for a sample project write-up, and `get_contact_info` to reach the agency or book a free strategy call. All data is public marketing content.",
+  instructions: "Information tools for Triumph Agency, a premium Shopify design and development agency. Use `list_services` for what the agency offers, `get_process` for the six-step project process, `search_faq` for pricing, timelines, migrations, support and other client questions, `list_blog_topics` for published Shopify insights, `get_case_study` for a sample project write-up, and `get_contact_info` to reach the agency or book a free strategy call. Callers must sign in to this app.",
+  auth: auth.oauth.issuer({
+    issuer: `https://${projectRef}.supabase.co/auth/v1`,
+    acceptedAudiences: "authenticated"
+  }),
   tools: [list_services_default, get_process_default, search_faq_default, list_blog_topics_default, get_case_study_default, get_contact_info_default]
 });
 

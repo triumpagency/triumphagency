@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -52,30 +53,32 @@ const HeroSection = () =>
       transition={{ delay: 0.8 }}
       className="flex flex-col sm:flex-row gap-4 justify-center">
       
-        <a
-        href="#contact"
+        <Link
+        to="/contact"
         className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg font-display font-semibold text-sm bg-accent text-accent-foreground hover:opacity-90 transition-opacity">
         
           Get In Touch
-        </a>
-        <a
-        href="#projects"
+        </Link>
+        <Link
+        to="/top-projects"
         className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg font-display font-semibold text-sm border border-border/50 hover:bg-secondary/20 transition-colors"
         style={{ color: "hsl(210, 40%, 95%)" }}>
         
           View Projects
-        </a>
+        </Link>
       </motion.div>
 
       <motion.a
-      href="#about"
+      href="#sections"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.2 }}
+      aria-label="Browse all sections"
       className="inline-block mt-16 animate-bounce">
       
         <ArrowDown size={24} style={{ color: "hsl(195, 90%, 50%)" }} />
       </motion.a>
+
     </div>
   </section>;
 

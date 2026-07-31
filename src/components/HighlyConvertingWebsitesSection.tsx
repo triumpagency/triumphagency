@@ -92,7 +92,7 @@ const HighlyConvertingWebsitesSection = () => {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={site.image.url}
+                  src={site.image}
                   alt={`${site.title} conversion-focused website mockup`}
                   width={1024}
                   height={768}

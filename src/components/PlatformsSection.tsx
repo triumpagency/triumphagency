@@ -18,25 +18,11 @@ const platforms = [
     benefits: ["Custom theme & plugin dev", "SEO-first architecture", "Scalable CMS workflows"],
   },
   {
-    name: "WooCommerce",
-    logo: "https://cdn.worldvectorlogo.com/logos/woocommerce.svg",
-    description:
-      "Open-source eCommerce powered by WordPress. We craft WooCommerce stores that give you full control over product, checkout, and customer experience.",
-    benefits: ["Flexible product catalog", "Payment & shipping integrations", "Custom checkout flows"],
-  },
-  {
     name: "Wix",
     logo: "https://cdn.worldvectorlogo.com/logos/wix.svg",
     description:
       "Modern, visually striking Wix sites for brands that need a polished presence fast. We extend Wix with custom code, Velo, and studio-grade design.",
     benefits: ["Velo custom code", "Rapid design sprints", "Membership & booking features"],
-  },
-  {
-    name: "Squarespace",
-    logo: "https://cdn.worldvectorlogo.com/logos/squarespace.svg",
-    description:
-      "Elegant Squarespace builds for creatives, service businesses, and portfolio brands. We push the platform beyond templates with custom CSS and integrations.",
-    benefits: ["Template customization", "Scheduling & commerce", "Editorial design systems"],
   },
   {
     name: "GoDaddy",
@@ -79,7 +65,7 @@ const PlatformsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {platforms.map((p, i) => (
             <motion.article
               key={p.name}

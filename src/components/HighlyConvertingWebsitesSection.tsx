@@ -1,12 +1,12 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight, TrendingUp, Zap, Smartphone, ShoppingCart, MousePointerClick, ShieldCheck } from "lucide-react";
-import mobileFirst from "@/assets/conversion-mobile-first.jpg.asset.json";
-import fastLoading from "@/assets/conversion-fast-loading.jpg.asset.json";
-import productPage from "@/assets/conversion-product-page.jpg.asset.json";
-import checkoutFlow from "@/assets/conversion-checkout-flow.jpg.asset.json";
-import persuasiveCta from "@/assets/conversion-persuasive-cta.jpg.asset.json";
-import trustBuilding from "@/assets/conversion-trust-building.jpg.asset.json";
+import mobileFirst from "@/assets/conversion-mobile-first.jpg";
+import fastLoading from "@/assets/conversion-fast-loading.jpg";
+import productPage from "@/assets/conversion-product-page.jpg";
+import checkoutFlow from "@/assets/conversion-checkout-flow.jpg";
+import persuasiveCta from "@/assets/conversion-persuasive-cta.jpg";
+import trustBuilding from "@/assets/conversion-trust-building.jpg";
 
 const websites = [
   {

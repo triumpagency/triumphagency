@@ -1,49 +1,27 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import PlatformsSection from "@/components/PlatformsSection";
-import WhyChooseSection from "@/components/WhyChooseSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import TopProjectsSection from "@/components/TopProjectsSection";
-import HighlyConvertingWebsitesSection from "@/components/HighlyConvertingWebsitesSection";
-import PreviousProjectsSection from "@/components/PreviousProjectsSection";
-import CaseStudySection from "@/components/CaseStudySection";
-import ResultsSection from "@/components/ResultsSection";
-import BeforeAfterSection from "@/components/BeforeAfterSection";
-import ProcessSection from "@/components/ProcessSection";
-import SkillsSection from "@/components/SkillsSection";
-import GuaranteeSection from "@/components/GuaranteeSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import BlogSection from "@/components/BlogSection";
-import FaqSection from "@/components/FaqSection";
-import BookingSection from "@/components/BookingSection";
-import ContactSection from "@/components/ContactSection";
+import SectionDirectory from "@/components/SectionDirectory";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/useSeo";
 
-const Index = () => (
-  <div className="min-h-screen bg-background">
-    <Navbar />
-    <HeroSection />
-    <AboutSection />
-    <PlatformsSection />
-    <WhyChooseSection />
-    <ProjectsSection />
-      <TopProjectsSection />
-      <HighlyConvertingWebsitesSection />
-      <PreviousProjectsSection />
-    <CaseStudySection />
-    <ResultsSection />
-    <BeforeAfterSection />
-    <ProcessSection />
-    <SkillsSection />
-    <GuaranteeSection />
-    <TestimonialsSection />
-    <BlogSection />
-    <FaqSection />
-    <BookingSection />
-    <ContactSection />
-    <Footer />
-  </div>
-);
+const Index = () => {
+  useSeo({
+    title: "Triumph Agency | Premium Shopify & Web Development",
+    description:
+      "Triumph Agency builds high-performance Shopify stores and websites engineered to convert. Browse case studies, results, process and more.",
+    path: "/",
+  });
+
+  return (
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <HeroSection />
+        <SectionDirectory />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Index;

@@ -12,7 +12,6 @@ import {
   Eye,
   BadgeCheck,
   Lightbulb,
-  Eye as EyeIcon,
   ShieldCheck,
   HeartHandshake,
   RefreshCw,
@@ -66,7 +65,7 @@ const processSteps = [
 const values = [
   { icon: BadgeCheck, title: "Quality", desc: "Considered detail in every screen, every state and every line of code." },
   { icon: Lightbulb, title: "Innovation", desc: "We keep testing new ideas and patterns rather than repeating the same build." },
-  { icon: EyeIcon, title: "Transparency", desc: "Clear scope, clear pricing, honest updates. You always know where things stand." },
+  { icon: Eye, title: "Transparency", desc: "Clear scope, clear pricing, honest updates. You always know where things stand." },
   { icon: ShieldCheck, title: "Reliability", desc: "Deadlines we mean, communication you can plan around, work that holds up." },
   { icon: HeartHandshake, title: "Customer Success", desc: "Your growth is the only real measure of whether the project worked." },
   { icon: RefreshCw, title: "Continuous Improvement", desc: "A store is never finished. We keep refining based on real behaviour and data." },
